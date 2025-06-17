@@ -30,8 +30,8 @@ export default function Sidebar() {
     return (
         <>
              {/* Mobile Topbar */}
-            <div className="md:hidden p-4 flex justify-between items-center border-b bg-white shadow-sm">
-                <div className="font-bold text-xl">SaaS Admin</div>
+            <div className="md:hidden p-4 flex justify-between items-center border-b bg-white shadow-sm  dark:bg-gray-900 dark:text-white">
+                <div className="font-bold text-xl  dark:bg-gray-900 dark:text-white">SaaS Admin</div>
                 <button
                 className="text-gray-600"
                 onClick={() => setIsOpen(!isOpen)}
@@ -41,7 +41,7 @@ export default function Sidebar() {
             </div>
        
             {/* Sidebar */}
-            <aside className="w-64 bg-white border-r shadow-sm hidden md:block">
+            <aside className="w-64 bg-white border-r shadow-sm hidden md:block  dark:bg-gray-900 dark:text-white">
                 <div className="p-4 font-bold text-xl">SaaS Admin</div>
                 <nav className="flex flex-col gap-2 p-4">
                 {navItems.map(({ label, href, icon: Icon })=> (
